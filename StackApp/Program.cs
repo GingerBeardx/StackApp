@@ -8,9 +8,17 @@ namespace StackApp
         {
             var stack = new Stacker();
 
+            stack.Push(1);
+            stack.Push(2);
             stack.Push(3);
             stack.Push("Eric");
-            stack.Push(null);
+
+            stack.Pop();
+            stack.Pop();
+
+            stack.Clear();
+
+            stack.IterateOverStack();
 
             Console.ReadLine();
         }
